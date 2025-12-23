@@ -8,7 +8,37 @@
 
 @font-face {
     font-family: norseFont;
-    src: url(fonts/Norsebold.ttf);
+    src: url(./fonts/Norsebold.ttf);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.odin-header {
+    margin-top: 30%;
+    flex: 1;
+}
+
+footer {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 130px;
+    height: auto;
+}
+
+.odin-para {
+    font-family: norseFont;
+    font-size: 7rem;
+    color: #FFFFFF;
 }
 
 body {
@@ -18,17 +48,20 @@ body {
 }
 
 .left-panel {
-    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
     width: 1200px;
     max-height: 100%;
-
+    background-image: url(images/halie-leaf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid red;
+    background-color: #F5F5F5;
     width: 100%;
 }
 
@@ -38,17 +71,76 @@ body {
     padding-bottom: 70px;
 }
 
-.top-header, .middle, .bottom {
+.top-header,
+.middle,
+.bottom {
     padding-left: 50px;
     padding-right: 50px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-form {
-    border: 2px solid red;
+.middle {
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+
+button {
+    background-color: #596D48;
+    color: #FFFFFF;
+    padding: 15px 60px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #596D48;
+}
+
+.first-name,
+.email,
+.password {
+    margin-right: 90px;
 }
 
 section {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+}
+
+input:focus {
+    background-color: #f0f8ff;
+    border: 2px solid #1e90ff;
+    outline: none;
+}
+
+#password:invalid {
+    outline: none;
+    border: 2px solid red;
+}
+
+
+#confirm-password:invalid {
+    outline: none;
+    border: 2px solid red;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 500px;
+    border: 1px solid #E5E7EB;
 }

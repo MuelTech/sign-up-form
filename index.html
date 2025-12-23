@@ -10,24 +10,28 @@
 
 <body>
     <div class="left-panel">
-        <div class="image-header">
-            <img src="#" alt="#">
-            <p>ODIN</p>
+        <div class="odin-header">
+            <div class="image">
+                <img src="./images/odin-lined.png" alt="odin-logo">
+                <p class="odin-para">ODIN</p>
+            </div>
         </div>
-        <p class="left-panel-footer">Photo by Halie West on Unsplash</p>
+        <footer>
+            <p>Photo by Halie West on Unsplash</p>
+        </footer>
     </div>
     <div class="main-content">
         <div class="top-header">
             <p>
-                This is not real online service! You know you need somthing 
-                like this in your life to help you realize your deepest dreams. 
-                Sign up <em>now</em> to get started. 
+                This is not real online service! You know you need somthing
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
             </p> <br>
             <p>You <em>know</em> you want to.</p>
         </div>
         <div class="middle">
+            <h2>Let's do this!</h2>
             <form id="sign-up-form" method="post">
-                <caption>Let's do this!</caption>
                 <section class="name">
                     <div class="first-name">
                         <label for="first-name">FIRST NAME</label> <br>
@@ -51,18 +55,18 @@
                 <section class="passwords">
                     <div class="password">
                         <label for="password">PASSWORD</label> <br>
-                        <input type="text" id="password" name="password">
+                        <input type="text" id="password" name="password" required>
                     </div>
                     <div class="confirm-password">
                         <label for="confirm-password">CONFIRM PASSWORD</label> <br>
-                        <input type="text" id="confirm-password" name="confirm-password">
+                        <input type="text" id="confirm-password" name="confirm-password" required>
                     </div>
                 </section>
             </form>
         </div>
         <div class="bottom">
             <button type="submit" form="sign-up-form">Create Account</button>
-            <p>Already have an account? <span>Log in</span></p>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>
